@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>うさぎの事務べんきょう室</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --main:#ff00ff; --ink:#3a1f3a; --muted:#8a6a8a; --bg:#fffafe; --card:#ffffff; --line:#f0d0f0; --tint:#fff0ff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#1e1022;--card:#2a1630;--ink:#f6e6f6;--muted:#c9a6c9;--line:#5a2f62;--tint:#341c3b}
+}
+:root[data-theme="dark"]{--bg:#1e1022;--card:#2a1630;--ink:#f6e6f6;--muted:#c9a6c9;--line:#5a2f62;--tint:#341c3b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.9}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid var(--line)}
+.logo{font-family:"Shippori Mincho","Yu Mincho",serif;font-weight:700;letter-spacing:.08em}
+.logo i{display:inline-block;width:10px;height:10px;background:var(--main);border-radius:50%;margin-right:8px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-size:.9rem;letter-spacing:.08em;padding-bottom:2px;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{border-bottom-color:var(--main)}
+.hero{max-width:960px;margin:0 auto;padding:56px 28px 40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:center}
+.hero .txt{flex:1 1 320px}
+.eyebrow{color:var(--main);font-size:.8rem;letter-spacing:.3em;font-weight:700}
+h1{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:clamp(1.8rem,5vw,2.7rem);line-height:1.4;margin:8px 0 16px}
+.hero p{color:var(--muted);margin:0;max-width:30em}
+.rule{width:56px;height:3px;background:var(--main);margin:20px 0}
+.art{flex:0 1 340px}
+.art svg{width:100%;height:auto}
+section{max-width:960px;margin:0 auto;padding:32px 28px}
+h2{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.3rem;margin:0 0 20px;padding-left:14px;border-left:4px solid var(--main);letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px}
+.card .no{color:var(--main);font-weight:700;letter-spacing:.2em;font-size:.8rem}
+.card h3{font-family:"Shippori Mincho","Yu Mincho",serif;margin:4px 0 6px;font-size:1.15rem}
+.card p{margin:0;color:var(--muted);font-size:.9rem}
+.menu a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 4px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.menu a:hover{background:var(--tint)}
+.menu b{font-family:"Shippori Mincho","Yu Mincho",serif;min-width:6em}
+.menu span{color:var(--muted);font-size:.88rem;flex:1}
+.menu em{color:var(--main);font-style:normal}
+footer{text-align:center;padding:28px;margin-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;letter-spacing:.1em}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><i></i>うさぎの事務べんきょう室</div>
+  <nav>
+    <a href="index.html" aria-current="page">HOME</a>
+    <a href="blog.html">BLOG</a>
+    <a href="column.html">COLUMN</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="txt">
+    <div class="eyebrow">OFFICE WORK STUDY NOTES</div>
+    <h1>コツコツ積み重ねる、<br>事務スキルの勉強記録。</h1>
+    <div class="rule"></div>
+    <p>簿記、秘書検定、MOSなど、事務の仕事に役立つ勉強の進み具合や気づきを、ゆるやかに綴っています。</p>
+  </div>
+  <div class="art">
+    <svg viewBox="0 0 340 300" role="img" aria-label="うさぎと青い鉛筆のイラスト">
+      <circle cx="120" cy="150" r="115" fill="#ff00ff" opacity=".07"/>
+      <g fill="#fff" stroke="#ff00ff" stroke-width="3" stroke-linejoin="round">
+        <ellipse cx="92" cy="62" rx="19" ry="52" transform="rotate(-6 92 62)"/>
+        <ellipse cx="148" cy="62" rx="19" ry="52" transform="rotate(8 148 62)"/>
+        <ellipse cx="120" cy="228" rx="60" ry="46"/>
+        <circle cx="120" cy="150" r="52"/>
+      </g>
+      <ellipse cx="92" cy="68" rx="8" ry="34" fill="#ffc0ff" transform="rotate(-6 92 68)"/>
+      <ellipse cx="148" cy="68" rx="8" ry="34" fill="#ffc0ff" transform="rotate(8 148 68)"/>
+      <circle cx="102" cy="146" r="4.5" fill="#3a1f3a"/><circle cx="138" cy="146" r="4.5" fill="#3a1f3a"/>
+      <path d="M114 158 q6 5 12 0 z" fill="#ff00ff"/>
+      <path d="M120 162 v5 M120 167 q-6 6 -11 1 M120 167 q6 6 11 1" fill="none" stroke="#3a1f3a" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M160 215 q22 8 40 -6" fill="none" stroke="#ff00ff" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(250 30) rotate(28)">
+        <polygon points="0,200 -14,170 14,170" fill="#f3d9b1" stroke="#b8935a" stroke-width="1.5"/>
+        <polygon points="0,200 -4.5,188 4.5,188" fill="#1f4fb5"/>
+        <rect x="-14" y="30" width="28" height="140" fill="#2f6fdb"/>
+        <rect x="-14" y="30" width="9" height="140" fill="#1f4fb5"/>
+        <rect x="6" y="30" width="4" height="140" fill="#6f9cf0"/>
+        <rect x="-14" y="14" width="28" height="18" fill="#c9ccd4" stroke="#9aa0ad" stroke-width="1"/>
+        <line x1="-14" y1="20" x2="14" y2="20" stroke="#9aa0ad"/><line x1="-14" y1="26" x2="14" y2="26" stroke="#9aa0ad"/>
+        <rect x="-14" y="-6" width="28" height="22" rx="5" fill="#ff80ff"/>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<section>
+  <h2>学習テーマ</h2>
+  <div class="grid">
+    <div class="card"><div class="no">01</div><h3>簿記</h3><p>仕訳や帳簿のしくみを、基礎から順に整理していきます。</p></div>
+    <div class="card"><div class="no">02</div><h3>秘書検定</h3><p>ビジネスマナーや敬語、仕事の進め方の基本を学びます。</p></div>
+    <div class="card"><div class="no">03</div><h3>MOS</h3><p>Word・Excel・PowerPointの操作スキルを磨きます。</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>コンテンツ</h2>
+  <div class="menu">
+    <a href="blog.html"><b>ブログ</b><span>勉強の進捗を日付つきでひとこと記録</span><em>→</em></a>
+    <a href="column.html"><b>コラム</b><span>漫画・イラスト・4コマと、短い読みもの</span><em>→</em></a>
+    <a href="about.html"><b>about</b><span>このサイトについて</span><em>→</em></a>
+  </div>
+</section>
+
+<footer>© うさぎの事務べんきょう室</footer>
+</body>
+</html>
