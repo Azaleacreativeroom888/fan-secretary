@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ABOUT | うさぎの事務べんきょう室</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --main:#ff00ff; --ink:#3a1f3a; --muted:#8a6a8a; --bg:#fffafe; --card:#ffffff; --line:#f0d0f0; --tint:#fff0ff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#1e1022;--card:#2a1630;--ink:#f6e6f6;--muted:#c9a6c9;--line:#5a2f62;--tint:#341c3b}
+}
+:root[data-theme="dark"]{--bg:#1e1022;--card:#2a1630;--ink:#f6e6f6;--muted:#c9a6c9;--line:#5a2f62;--tint:#341c3b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.9}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid var(--line)}
+.logo{font-family:"Shippori Mincho","Yu Mincho",serif;font-weight:700;letter-spacing:.08em}
+.logo i{display:inline-block;width:10px;height:10px;background:var(--main);border-radius:50%;margin-right:8px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-size:.9rem;letter-spacing:.08em;padding-bottom:2px;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{border-bottom-color:var(--main)}
+main{max-width:900px;margin:0 auto;padding:40px 28px 24px}
+.eyebrow{color:var(--main);font-size:.8rem;letter-spacing:.3em;font-weight:700}
+h1{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.8rem;margin:6px 0 8px}
+.lead{color:var(--muted);margin:0 0 12px;font-size:.92rem}
+h2{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.3rem;margin:44px 0 20px;padding-left:14px;border-left:4px solid var(--main);letter-spacing:.06em}
+.label{color:var(--muted);font-size:.78rem;letter-spacing:.25em;margin:22px 0 10px;display:flex;align-items:center;gap:12px}
+.label::after{content:"";flex:1;height:1px;background:var(--line)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px 26px}
+.panel p{margin:0 0 8px}
+.panel ul{margin:8px 0 0;padding-left:1.2em;color:var(--muted)}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.link{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--main);border-radius:6px;padding:14px 16px;color:var(--ink);text-decoration:none}
+.link:hover{background:var(--tint)}
+.ic{flex:0 0 auto;width:40px;height:40px;border:1px solid var(--main);border-radius:6px;color:var(--main);font-weight:700;display:flex;align-items:center;justify-content:center;font-family:"Shippori Mincho",serif}
+.link div{flex:1;min-width:0}
+.link b{display:block;font-size:.95rem}
+.link small{display:block;color:var(--muted);font-size:.78rem;line-height:1.5}
+.link em{color:var(--main);font-style:normal;font-size:1.2rem}
+form .g{margin-bottom:16px}
+form label{display:block;color:var(--muted);font-size:.8rem;letter-spacing:.15em;margin-bottom:4px}
+form label i{color:var(--main);font-style:normal}
+input,textarea{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:10px 12px;font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--main);outline-offset:0}
+textarea{min-height:150px;resize:vertical}
+button{background:var(--main);color:#fff;border:none;border-radius:4px;padding:10px 30px;font:inherit;font-weight:700;letter-spacing:.15em;cursor:pointer}
+button:hover{opacity:.85}
+.back{display:inline-block;margin-top:28px;color:var(--muted);text-decoration:none;font-size:.85rem;border:1px solid var(--line);border-radius:4px;padding:8px 16px;letter-spacing:.1em}
+.back:hover{background:var(--tint)}
+footer{margin-top:40px;padding:26px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:.75rem;line-height:1.9;text-align:center}
+footer p{max-width:760px;margin:0 auto 8px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><i></i>うさぎの事務べんきょう室</div>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="blog.html">BLOG</a>
+    <a href="column.html">COLUMN</a>
+    <a href="about.html" aria-current="page">ABOUT</a>
+  </nav>
+</header>
+
+<main>
+  <div class="eyebrow">ABOUT</div>
+  <h1>このサイトについて</h1>
+  <p class="lead">サイトの紹介と、リンク・お問い合わせ先をまとめています。</p>
+
+  <h2>サイト紹介</h2>
+  <div class="panel">
+    <p>「うさぎの事務べんきょう室」は、簿記・秘書検定・MOSなど、事務の仕事に役立つ勉強の記録をまとめるサイトです。</p>
+    <ul>
+      <li>BLOG：勉強の進捗を日付つきでひとこと記録</li>
+      <li>COLUMN：レポート、漫画・イラスト・4コマ、短い読みもの</li>
+    </ul>
+    <p style="margin-top:14px">管理人：Azalea72。漫画とイラストを描いています。</p>
+  </div>
+
+  <h2>リンク</h2>
+  <div class="label">漫画・イラスト掲載サイト</div>
+  <div class="links">
+    <a class="link" href="https://rookie.shonenjump.com/users/14728546961183734555" target="_blank" rel="noopener"><span class="ic">J</span><div><b>ジャンプルーキー</b><small>オリジナル漫画を掲載中</small></div><em>›</em></a>
+    <a class="link" href="https://www.pixiv.net/users/105728284" target="_blank" rel="noopener"><span class="ic">P</span><div><b>Pixiv</b><small>二次創作はこちらに掲載</small></div><em>›</em></a>
+  </div>
+  <div class="label">SNS・その他</div>
+  <div class="links">
+    <a class="link" href="https://bsky.app/profile/azaleaazalea88.bsky.social" target="_blank" rel="noopener"><span class="ic">B</span><div><b>Bluesky</b><small>近況・作品のお知らせ</small></div><em>›</em></a>
+    <a class="link" href="https://www.youtube.com/@LilyPopins0512" target="_blank" rel="noopener"><span class="ic">Y</span><div><b>YouTube（リリポピ）</b><small>動画チャンネル</small></div><em>›</em></a>
+    <a class="link" href="https://lilipopi.github.io/lilypopins/" target="_blank" rel="noopener"><span class="ic">L</span><div><b>リリポピのホームページ</b><small>別サイト</small></div><em>›</em></a>
+  </div>
+  <div class="label">Azalea72のホームページ</div>
+  <div class="links">
+    <a class="link" href="https://azaleacreativeroom888.github.io/storyreviewazalea/" target="_blank" rel="noopener"><span class="ic">書</span><div><b>書評サイト</b><small>本・アニメ・映画・ゲーム・小説の備忘録</small></div><em>›</em></a>
+    <a class="link" href="https://azaleacreativeroom888.github.io/fan-english/" target="_blank" rel="noopener"><span class="ic">En</span><div><b>英語サイト（English Site）</b><small>英語話者と英語学習者に向けたサイト</small></div><em>›</em></a>
+    <a class="link" href="https://azaleacreativeroom888.github.io/fan-watercolor/" target="_blank" rel="noopener"><span class="ic">水</span><div><b>水彩画サイト</b><small>水彩画掲載</small></div><em>›</em></a>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <div class="panel">
+    <p style="color:var(--muted);font-size:.9rem">ご質問・ご感想などはこちらからどうぞ。</p>
+    <form action="https://formspree.io/f/maqvpvoz" method="POST">
+      <div class="g"><label for="name">お名前</label><input type="text" id="name" name="name" placeholder="お名前"></div>
+      <div class="g"><label for="email">メールアドレス <i>*</i></label><input type="email" id="email" name="email" placeholder="example@email.com" required></div>
+      <div class="g"><label for="message">メッセージ <i>*</i></label><textarea id="message" name="message" placeholder="メッセージを入力してください" required></textarea></div>
+      <button type="submit">送信する</button>
+    </form>
+  </div>
+
+  <a class="back" href="index.html">← トップページに戻る</a>
+</main>
+
+<footer>
+  <p>当サイトに掲載されている画像・文章・作品について、AI学習への利用、トレース（トレパク）、無断転載・転載、二次利用を禁止します。スクリーンショットの転載・無断引用はご遠慮ください。</p>
+  <p>Please refrain from using any images, text, or works on this website for AI training, tracing, unauthorized reproduction, redistribution, or secondary use.</p>
+  <p>© うさぎの事務べんきょう室</p>
+</footer>
+</body>
+</html>
