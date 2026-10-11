@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>COLUMN | うさぎの事務べんきょう室</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --main:#ff00ff; --ink:#3a1f3a; --muted:#8a6a8a; --bg:#fffafe; --card:#ffffff; --line:#f0d0f0; --tint:#fff0ff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#1e1022;--card:#2a1630;--ink:#f6e6f6;--muted:#c9a6c9;--line:#5a2f62;--tint:#341c3b}
+}
+:root[data-theme="dark"]{--bg:#1e1022;--card:#2a1630;--ink:#f6e6f6;--muted:#c9a6c9;--line:#5a2f62;--tint:#341c3b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.9}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid var(--line)}
+.logo{font-family:"Shippori Mincho","Yu Mincho",serif;font-weight:700;letter-spacing:.08em}
+.logo i{display:inline-block;width:10px;height:10px;background:var(--main);border-radius:50%;margin-right:8px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-size:.9rem;letter-spacing:.08em;padding-bottom:2px;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{border-bottom-color:var(--main)}
+main{max-width:900px;margin:0 auto;padding:40px 28px 24px}
+.eyebrow{color:var(--main);font-size:.8rem;letter-spacing:.3em;font-weight:700}
+h1{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.8rem;margin:6px 0 8px}
+.lead{color:var(--muted);margin:0 0 12px;font-size:.92rem}
+h2{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.3rem;margin:44px 0 20px;padding-left:14px;border-left:4px solid var(--main);letter-spacing:.06em}
+.works{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.work{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px}
+.work h3{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1rem;margin:10px 0 0}
+.work small{color:var(--muted)}
+.ph{background:var(--tint);border:1px dashed var(--main);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;text-align:center}
+.ph.sq{aspect-ratio:1/1}
+.ph.tall{aspect-ratio:3/4}
+.koma{display:grid;grid-template-rows:repeat(4,1fr);gap:6px;aspect-ratio:3/5}
+.koma .ph{border-style:solid;color:var(--main);font-weight:700}
+.reports{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.rbox{display:block;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--main);border-radius:6px;padding:20px 22px;color:var(--ink);text-decoration:none}
+.rbox:hover{background:var(--tint)}
+.rbox .no{color:var(--main);font-weight:700;letter-spacing:.2em;font-size:.8rem}
+.rbox h3{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.15rem;margin:2px 0 6px}
+.rbox span{color:var(--muted);font-size:.85rem}
+.rbox em{display:block;margin-top:8px;color:var(--main);font-style:normal;font-size:.85rem;letter-spacing:.1em}
+.essay{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:28px;margin-bottom:20px}
+.essay .meta{color:var(--main);font-weight:700;font-size:.8rem;letter-spacing:.1em}
+.essay h3{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.25rem;margin:4px 0 14px}
+.essay h4{margin:16px 0 0;font-size:.85rem;color:var(--main);letter-spacing:.2em}
+.essay p{margin:2px 0 0}
+footer{text-align:center;padding:28px;margin-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;letter-spacing:.1em}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><i></i>うさぎの事務べんきょう室</div>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="blog.html">BLOG</a>
+    <a href="column.html" aria-current="page">COLUMN</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+</header>
+
+<main>
+  <div class="eyebrow">COLUMN</div>
+  <h1>コラム</h1>
+  <p class="lead">事務の勉強にまつわる漫画やイラスト、短い読みものを置いています。</p>
+
+  <h2>レポート</h2>
+  <div class="reports">
+    <a class="rbox" href="report1.html"><div class="no">REPORT 01</div><h3>MOSの勉強</h3><span>Word・Excel・PowerPointの学習まとめ</span><em>READ →</em></a>
+    <a class="rbox" href="report2.html"><div class="no">REPORT 02</div><h3>秘書検定の勉強</h3><span>マナー・敬語・仕事の基本の学習まとめ</span><em>READ →</em></a>
+    <a class="rbox" href="report3.html"><div class="no">REPORT 03</div><h3>日商簿記の勉強</h3><span>仕訳や帳簿のしくみの学習まとめ</span><em>READ →</em></a>
+  </div>
+
+  <h2>漫画・イラスト・4コマ</h2>
+  <!-- 画像の差し替え方：.ph の div を <img src="画像ファイル名" alt="説明"> に置き換えてください -->
+  <div class="works">
+    <div class="work">
+      <div class="koma"><div class="ph">1</div><div class="ph">2</div><div class="ph">3</div><div class="ph">4</div></div>
+      <h3>4コマ：タイトル</h3><small>2026.10.11</small>
+    </div>
+    <div class="work">
+      <div class="ph tall">漫画の1ページ</div>
+      <h3>漫画：タイトル</h3><small>2026.10.11</small>
+    </div>
+    <div class="work">
+      <div class="ph sq">イラスト</div>
+      <h3>イラスト：タイトル</h3><small>2026.10.11</small>
+    </div>
+  </div>
+
+  <h2>読みもの</h2>
+  <article class="essay">
+    <div class="meta">2026.10.11 ／ 簿記</div>
+    <h3>仕訳は「お金の動きの短い作文」だと思う</h3>
+    <h4>序論</h4>
+    <p>簿記の最初の壁は仕訳だ。借方と貸方という言葉が堅く見えて、最初はなかなか頭に入ってこなかった。</p>
+    <h4>本論</h4>
+    <p>けれど仕訳は、「何が増えて、何が減ったか」を左右に書くだけの短い作文だと考えると、ぐっと身近になる。現金で文房具を買えば、「文房具の費用が増え、現金が減った」。それをルールどおりに並べているだけだ。</p>
+    <h4>結論</h4>
+    <p>むずかしく感じたら、まず日常の買い物を仕訳に置き換えてみる。小さな練習の積み重ねが、いちばんの近道だと思う。</p>
+  </article>
+  <article class="essay">
+    <div class="meta">2026.10.11 ／ 秘書検定</div>
+    <h3>敬語は相手への気づかいの形</h3>
+    <h4>序論</h4>
+    <p>（ここに序論を書きます）</p>
+    <h4>本論</h4>
+    <p>（ここに本論を書きます）</p>
+    <h4>結論</h4>
+    <p>（ここに結論を書きます）</p>
+  </article>
+</main>
+
+<footer>© うさぎの事務べんきょう室</footer>
+</body>
+</html>
