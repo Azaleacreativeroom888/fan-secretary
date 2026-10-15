@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>REPORT 02 秘書検定用語辞典 | うさぎの事務べんきょう室</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --main:#ff00ff; --ink:#3a1f3a; --muted:#8a6a8a; --bg:#fffafe; --card:#ffffff; --line:#f0d0f0; --tint:#fff0ff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#1e1022;--card:#2a1630;--ink:#f6e6f6;--muted:#c9a6c9;--line:#5a2f62;--tint:#341c3b}
+}
+:root[data-theme="dark"]{--bg:#1e1022;--card:#2a1630;--ink:#f6e6f6;--muted:#c9a6c9;--line:#5a2f62;--tint:#341c3b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.9}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid var(--line)}
+.logo{font-family:"Shippori Mincho","Yu Mincho",serif;font-weight:700;letter-spacing:.08em}
+.logo i{display:inline-block;width:10px;height:10px;background:var(--main);border-radius:50%;margin-right:8px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-size:.9rem;letter-spacing:.08em;padding-bottom:2px;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{border-bottom-color:var(--main)}
+main{max-width:820px;margin:0 auto;padding:40px 24px 24px}
+.eyebrow{color:var(--main);font-size:.8rem;letter-spacing:.3em;font-weight:700}
+h1{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.8rem;margin:6px 0 8px}
+.lead{color:var(--muted);margin:0 0 20px;font-size:.92rem}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:8px}
+.tools input{flex:1 1 220px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:10px 14px;font:inherit}
+.tools input:focus{outline:2px solid var(--main)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips a{color:var(--main);border:1px solid var(--main);border-radius:999px;padding:2px 16px;text-decoration:none;font-size:.85rem;font-weight:700}
+.chips a:hover{background:var(--tint)}
+.count{color:var(--muted);font-size:.8rem;margin:6px 0 0}
+h2{font-family:"Shippori Mincho","Yu Mincho",serif;font-size:1.3rem;margin:40px 0 16px;padding-left:14px;border-left:4px solid var(--main);letter-spacing:.06em}
+dl{margin:0;background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.term{padding:16px 22px;border-bottom:1px solid var(--line)}
+.term:last-child{border-bottom:none}
+dt{font-family:"Shippori Mincho","Yu Mincho",serif;font-weight:700;font-size:1.05rem}
+dt small{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--main);font-weight:500;font-size:.75rem;letter-spacing:.1em;margin-left:8px}
+dd{margin:2px 0 0;color:var(--muted);font-size:.92rem}
+.empty{display:none;text-align:center;color:var(--muted);padding:30px 0}
+.back{display:inline-block;margin-top:32px;color:var(--muted);text-decoration:none;font-size:.85rem;border:1px solid var(--line);border-radius:4px;padding:8px 16px;letter-spacing:.1em}
+.back:hover{background:var(--tint)}
+footer{margin-top:40px;padding:26px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;text-align:center;letter-spacing:.1em}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><i></i>うさぎの事務べんきょう室</div>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="blog.html">BLOG</a>
+    <a href="column.html" aria-current="page">COLUMN</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+</header>
+
+<main>
+  <div class="eyebrow">REPORT 02</div>
+  <h1>秘書検定用語辞典</h1>
+  <p class="lead">秘書検定の勉強で出会った用語を、辞書のようにまとめていきます。まずは基本の単語から。</p>
+
+  <div class="tools">
+    <input type="search" id="q" placeholder="用語を検索（例：敬語）" aria-label="用語を検索">
+    <div class="chips"><a href="#work">職務と資質</a><a href="#words">言葉づかい</a><a href="#manner">接遇・マナー</a><a href="#docs">文書・事務</a></div>
+  </div>
+  <p class="count" id="count"></p>
+
+  <!-- 用語の追加方法：<div class="term"> を1つコピーして、用語・読み・説明を書き換えてください -->
+  <section class="grp" id="work">
+    <h2>職務と資質</h2>
+    <dl>
+      <div class="term"><dt>秘書<small>ひしょ</small></dt><dd>上司の仕事を補佐し、上司が本来の業務に専念できるよう支える役割。</dd></div>
+      <div class="term"><dt>機密事項<small>きみつじこう</small></dt><dd>外部に漏らしてはならない重要な情報。秘書は特に厳しく守る必要がある。</dd></div>
+      <div class="term"><dt>定型業務<small>ていけいぎょうむ</small></dt><dd>日常的に決まった手順で行う仕事。スケジュール管理や郵便物の処理など。</dd></div>
+      <div class="term"><dt>非定型業務<small>ひていけいぎょうむ</small></dt><dd>上司の指示などに応じて、その都度対応する仕事。</dd></div>
+      <div class="term"><dt>復唱<small>ふくしょう</small></dt><dd>指示を受けたときに、要点を繰り返して確認すること。</dd></div>
+      <div class="term"><dt>権限<small>けんげん</small></dt><dd>判断して行ってよい範囲。秘書は権限を超えて独断で行動しない。</dd></div>
+    </dl>
+  </section>
+
+  <section class="grp" id="words">
+    <h2>言葉づかい</h2>
+    <dl>
+      <div class="term"><dt>尊敬語<small>そんけいご</small></dt><dd>相手や、相手側の動作・持ち物を高めて敬意を表す言葉。</dd></div>
+      <div class="term"><dt>謙譲語<small>けんじょうご</small></dt><dd>自分や自分側の動作をへりくだって、相手に敬意を表す言葉。</dd></div>
+      <div class="term"><dt>丁寧語<small>ていねいご</small></dt><dd>「です」「ます」など、聞き手に対して丁寧に述べる言葉。</dd></div>
+      <div class="term"><dt>敬称<small>けいしょう</small></dt><dd>相手の名前や役職につける敬意を表す呼び方。「様」など。</dd></div>
+      <div class="term"><dt>御中<small>おんちゅう</small></dt><dd>会社や部署など、団体宛ての書類や手紙の宛名につける敬称。</dd></div>
+      <div class="term"><dt>クッション言葉<small>くっしょんことば</small></dt><dd>依頼や断りの前に添えて印象をやわらげる言葉。「恐れ入りますが」など。</dd></div>
+    </dl>
+  </section>
+
+  <section class="grp" id="manner">
+    <h2>接遇・マナー</h2>
+    <dl>
+      <div class="term"><dt>会釈・敬礼・最敬礼<small>えしゃく・けいれい・さいけいれい</small></dt><dd>お辞儀の種類。角度の目安は、会釈が約15度、敬礼が約30度、最敬礼が約45度。</dd></div>
+      <div class="term"><dt>上座<small>かみざ</small></dt><dd>来客や目上の人にすすめる席。応接室では入口から遠い席が基本。</dd></div>
+      <div class="term"><dt>名刺交換<small>めいしこうかん</small></dt><dd>訪問した側や目下の者から先に差し出すのが基本。</dd></div>
+      <div class="term"><dt>慶事／弔事<small>けいじ／ちょうじ</small></dt><dd>慶事は結婚や出産などの祝いごと、弔事は葬儀などのおくやみごと。</dd></div>
+      <div class="term"><dt>アポイントメント<small>あぽいんとめんと</small></dt><dd>面会の約束。略して「アポ」とも言う。</dd></div>
+      <div class="term"><dt>応接<small>おうせつ</small></dt><dd>来客を迎え、案内して接待すること。</dd></div>
+    </dl>
+  </section>
+
+  <section class="grp" id="docs">
+    <h2>文書・事務</h2>
+    <dl>
+      <div class="term"><dt>頭語と結語<small>とうごとけつご</small></dt><dd>手紙の書き出しと結びに使う決まった語。「拝啓」と「敬具」のように対応させる。</dd></div>
+      <div class="term"><dt>前文<small>ぜんぶん</small></dt><dd>ビジネス文書の書き出し部分。頭語や時候の挨拶などを書く。</dd></div>
+      <div class="term"><dt>時候の挨拶<small>じこうのあいさつ</small></dt><dd>季節に合わせた挨拶。「陽春の候」など。</dd></div>
+      <div class="term"><dt>稟議<small>りんぎ</small></dt><dd>担当者が案を作り、関係者に回して承認を得る手続き。</dd></div>
+      <div class="term"><dt>議事録<small>ぎじろく</small></dt><dd>会議の内容や決定事項を記録した文書。</dd></div>
+      <div class="term"><dt>ファイリング<small>ふぁいりんぐ</small></dt><dd>文書を分類して整理・保管し、必要なときにすぐ取り出せるようにすること。</dd></div>
+    </dl>
+  </section>
+
+  <p class="empty" id="empty">見つかりませんでした。別のことばで探してみてください。</p>
+
+  <a class="back" href="column.html">← コラムに戻る</a>
+</main>
+
+<footer>© うさぎの事務べんきょう室</footer>
+
+<script>
+(function(){
+  var q=document.getElementById('q'),terms=[].slice.call(document.querySelectorAll('.term')),
+      grps=[].slice.call(document.querySelectorAll('.grp')),count=document.getElementById('count'),empty=document.getElementById('empty');
+  function run(){
+    var k=q.value.trim().toLowerCase(),n=0;
+    terms.forEach(function(t){var m=!k||t.textContent.toLowerCase().indexOf(k)>-1;t.style.display=m?'':'none';if(m)n++;});
+    grps.forEach(function(g){g.style.display=g.querySelector('.term:not([style*="none"])')?'':'none';});
+    count.textContent=n+' 語';empty.style.display=n?'none':'block';
+  }
+  q.addEventListener('input',run);run();
+})();
+</script>
+</body>
+</html>
